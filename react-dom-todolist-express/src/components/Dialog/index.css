@@ -1,0 +1,93 @@
+/* 遮罩层样式 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 半透明黑色背景 */
+  z-index: 999;
+  /* 确保遮罩层显示在其他内容上方 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-dialog {
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 150px;
+  position: relative;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.edit-dialog {
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.edit-dialog>input {
+  border: 2px #646cff solid;
+  height: 30px;
+  border-radius: 3px;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.edit-dialog>input:focus {
+  border: 2px #646cff dashed;
+}
+
+.confirm-button {
+  width: 50px;
+  height: 30px;
+  border: 2px #CD5C5C solid;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  transition: all 0.2s linear;
+  line-height: 30px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.confirm-button:hover {
+  background-color: #CD5C5C;
+  color: #ffffff;
+}
+
+.close-button {
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  border: 2px #646cff solid;
+  border-radius: 5px;
+  bottom: 20px;
+  left: 40px;
+  transition: all 0.2s linear;
+  line-height: 30px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.close-button:hover {
+  background-color: #646cff;
+  color: #ffffff;
+}

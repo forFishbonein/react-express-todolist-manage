@@ -1,0 +1,32 @@
+.nav-wapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #ffffff;
+}
+
+.nav-wapper>a {
+  /* width: 250px; */
+  height: 50px;
+  color: #8c8c8c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  font-size: 15px;
+}
+
+.nav-wapper>a:hover {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #fcfcfc;
+}
+
+.nav-wapper .add {
+  color: rgba(0, 0, 0, 0.85);
+  background-color: #fcfcfc;
+  border-bottom: 2px #e0e0e0 dashed;
+  border-top: 2px #e0e0e0 dashed;
+}

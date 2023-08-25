@@ -1,0 +1,35 @@
+.main-wapper {
+  width: 100%;
+  /* height: calc((100% / 10) * 8); */
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-left {
+  width: 12%;
+  height: 100%;
+  background-color: #ffffff;
+  border-right: 2px dashed #e0e0e0;
+}
+
+.main-right {
+  width: 88%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-wapper {
+  width: 95%;
+  /* border: 1px #e8604c solid; */
+  height: 95%;
+  background-color: #ffffff;
+  padding: 0 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 27px 6px rgba(0, 0, 0, 0.05);
+}

@@ -1,0 +1,121 @@
+.list-title {
+  width: 90%;
+  height: 50px;
+  border-bottom: 1px #e0e0e0 solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.list-title>div {
+  width: 12.5%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid #e0e0e0;
+}
+
+.list-title>div:last-child {
+  border: 0;
+}
+
+.list-body {
+  width: 90%;
+}
+
+.list-body .item-line {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px #e0e0e0 solid;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item-line>div {
+  width: 12.5%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s linear;
+}
+
+.item-line>div:last-child {
+  padding-right: 5px;
+}
+
+.item-line:hover {
+  background-color: #f5f5f5;
+}
+
+/* 自定义单选框样式 */
+.radio-container {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  /* margin-right: 10px; */
+}
+
+.radio-container input {
+  display: none;
+  /* 隐藏原始的输入框 */
+}
+
+.radio-container .radio-custom {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #bbb;
+  position: relative;
+  top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+
+.radio-container .radio-custom:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #bbb;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* 鼠标悬停时单选框样式 */
+.radio-container:hover .radio-custom {
+  border-color: #888;
+}
+
+/* 选中状态的单选框样式 */
+.radio-container input:checked+.radio-custom:before {
+  opacity: 1;
+}
+
+.edit {
+  width: 45px;
+  height: 25px;
+  background-color: #7e82d1;
+  color: #ffffff;
+  line-height: 25px;
+  margin-right: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete {
+  width: 45px;
+  height: 25px;
+  background-color: #CD5C5C;
+  color: #ffffff;
+  line-height: 25px;
+  border-radius: 3px;
+  cursor: pointer;
+}

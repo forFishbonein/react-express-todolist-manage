@@ -1,0 +1,18 @@
+.footer-wapper {
+  width: 100%;
+  /* height: calc(100% / 10); */
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #646cff;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.footer-wapper>.text {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  font-weight: 600;
+}

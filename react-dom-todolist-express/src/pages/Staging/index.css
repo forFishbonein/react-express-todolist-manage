@@ -1,0 +1,62 @@
+.search-wapper {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px dashed #646cff;
+}
+
+.search-wapper>input {
+  border: 2px #646cff solid;
+  height: 30px;
+  border-radius: 3px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.search-wapper>input:focus {
+  border: 2px #646cff dashed;
+}
+
+.search-wapper>.button {
+  background-color: #646cff;
+  /* height: 25px; */
+  width: 50px;
+  padding: 3px;
+  font-size: 14px;
+  border-radius: 3px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  line-height: 25px;
+}
+
+.search-wapper>.button:hover {
+  background-color: #535bf2;
+}
+
+.list-wapper {
+  width: 100%;
+  /* height: 100%; */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 30px;
+  overflow: auto;
+  /* box-shadow: 0 2px 27px 6px rgba(0, 0, 0, 0.12); */
+}
+
+.end-wapper {
+  padding: 0 100px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+/* .text-did {
+  margin-left: 100px;
+} */
